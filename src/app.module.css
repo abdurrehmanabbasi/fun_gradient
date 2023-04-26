@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    width: 50%;
+    max-width: 400px;
+    padding:10px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    gap: 20 px;
+    background-color: white;
+}
+.direction{
+    font-size: 20px;
+    appearance: none; /* Removes default arrow */
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><path d='M12 16.59l-5.3-5.3a1 1 0 1 1 1.42-1.42L12 13.75l4.88-4.88a1 1 0 1 1 1.42 1.42L12 16.59z' fill='%230effd3'/></svg>"); /* Adds custom arrow */
+    background-repeat: no-repeat; /* Prevents repeating of background */
+    background-position: right center; /* Positions arrow to the right */
+    padding-right: 1.5em; /* Adds padding to right for arrow */
+    border: none; /* Removes border */
+    background-color: transparent; /* Makes background transparent */
+    color: inherit; 
+}
+.direction:focus{
+    outline: none;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.colorDiv{
+    width: 100%;
+    display: flex;
+}
+.inputColor{
+    width: 90%;
+    border:none;
+    outline: none;
+}
+.removeBtn{
+    font-size: 14px;
+    color: white;
+    background: red;
+    border: 1px solid;
+    border-radius: 99999px;
+    width: 10%;
+}
+.btn{
+    background-color: #0e00d3;
+    color:white;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
